@@ -12,4 +12,8 @@
     <Match ContentType="BlogPost" DisplayType="Summary">
         <Place Parts_Common_Metadata="-"/> 
     </Match>    
+  <!--<Match Path="~/">
+    <Place Parts_Title="-" 
+      Parts_Tags_ShowTags="Nowhere"/>
+  </Match>-->  
 </Placement>
