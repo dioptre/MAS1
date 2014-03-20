@@ -43,6 +43,7 @@
 <script type="text/javascript" src="@Href("~/Themes/MAS1/js/populateSelectNav.js")"></script>
 <script type="text/javascript" src="@Href("~/Modules/EXPEDIT.Share/Scripts/common.js")"></script>
 
+
 	<!--Apply class to body with browser version-->
 	<script type="text/javascript">
 		var nVer = navigator.appVersion; var nAgt = navigator.userAgent; var bN = navigator.appName; var fullV = "" + parseFloat(navigator.appVersion); var majorV = parseInt(navigator.appVersion, 10); var nameOffset, verOffset, ix; if ((verOffset = nAgt.indexOf("Opera")) !== -1) { bN = "Opera"; fullV = nAgt.substring(verOffset + 6); if ((verOffset = nAgt.indexOf("Version")) !== -1) { fullV = nAgt.substring(verOffset + 8) } } else { if ((verOffset = nAgt.indexOf("MSIE")) !== -1) { bN = "IE"; fullV = nAgt.substring(verOffset + 5) } else { if ((verOffset = nAgt.indexOf("Chrome")) !== -1) { bN = "Chrome"; fullV = nAgt.substring(verOffset + 7) } else { if ((verOffset = nAgt.indexOf("Safari")) !== -1) { bN = "Safari"; fullV = nAgt.substring(verOffset + 7); if ((verOffset = nAgt.indexOf("Version")) !== -1) { fullV = nAgt.substring(verOffset + 8) } } else { if ((verOffset = nAgt.indexOf("Firefox")) !== -1) { bN = "Firefox"; fullV = nAgt.substring(verOffset + 8) } else { if ((nameOffset = nAgt.lastIndexOf(" ") + 1) < (verOffset = nAgt.lastIndexOf("/"))) { bN = nAgt.substring(nameOffset, verOffset); fullV = nAgt.substring(verOffset + 1); if (bN.toLowerCase() == bN.toUpperCase()) { bN = navigator.appName } } } } } } } if ((ix = fullV.indexOf(";")) !== -1) { fullV = fullV.substring(0, ix) } if ((ix = fullV.indexOf(" ")) !== -1) { fullV = fullV.substring(0, ix) } majorV = parseInt("" + fullV, 10); if (isNaN(majorV)) { fullV = "" + parseFloat(navigator.appVersion); majorV = parseInt(navigator.appVersion, 10) } 
@@ -101,20 +102,25 @@
 	</div>
 </header>
 
-<div id="PageTitle">@if (Model.Featured != null){<div id="Featured" class="">@Display(Model.Featured)</div>}</div>
+<div id="HomeSlider">@if (Model.Header != null){<div id="Header" class="">@Display(Model.Header)</div>}</div>
 
 <div id="MainWrapper">
 <!---BindTuning HEADER End--->
 
 <!---BindTuning CONTENT Start--->
 	<div class="container">
-		<div id="Main" role="main">
-			<div class="row-fluid">
+		<div class="row-fluid">
+			<div class="span3 hidden-phone">
+				<div id="MenuV"><div class="navholder"><script type="text/javascript">$("#MenuV .navholder").html($("#MenuH nav").parent().html());</script></div></div>
+				@if (Model.Messages != null){<div id="Messages" class="LeftZone">@Display(Model.Messages)</div>}
+			</div>
+			<div class="span9" id="Main" role="main">
+				<div class="row-fluid">
 	@if (Model.BeforeMain != null){<div class="pane span12" runat="server" id="BeforeMain">@Display(Model.BeforeMain)</div>}
 </div>
 <div class="row-fluid">
 	@if (Model.BeforeContent != null){<div class="pane span7" runat="server" id="BeforeContent">@Display(Model.BeforeContent)</div>}
-    <a id="affiliateLinkedIn" class="btn-small btn-success affiliate-linkedin" href="#" onclick="checkAffiliate(); return false;" target="_blank"><i class="icon-linkedin-sign"></i> Share on LinkedIn</a>
+    <a id="affiliateLinkedIn" class="btn-small btn-success affiliate-linkedin" href="#" onclick="checkAffiliate(); return false;"><i class="icon-linkedin-sign"></i> Share on LinkedIn</a>
 	@if (Model.AsideFirst != null){<div class="pane span5" runat="server" id="AsideFirst"><div class="C03 container-box">@Display(Model.AsideFirst)</div></div>}
 </div>
 <div class="row-fluid">
@@ -149,7 +155,8 @@
 	@if (Model.TripelSecond != null){<div class="pane span4" runat="server" id="TripelSecond"><div class="C01 container-box">@Display(Model.TripelSecond)</div></div>}
 	@if (Model.TripelThird != null){<div class="pane span4" runat="server" id="TripelThird"><div class="C01 container-box">@Display(Model.TripelThird)</div></div>}
 </div>
-			<div id="Breadcrumb"><i class="icon icon-home"></i> </div>
+				<div id="Breadcrumb"><i class="icon icon-home"></i> </div>
+			</div>
 		</div>
 	</div>
 <!---BindTuning CONTENT End--->
