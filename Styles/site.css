@@ -13,3 +13,14 @@ padding-left:43px;
     float: right;
 }
 
+.nav-tabs>.ui-tabs-active>a, .nav-tabs>.ui-tabs-active>a:hover, .nav-tabs>.ui-tabs-active>a:focus {
+color: #555;
+background-color: white;
+border: 1px solid #ddd;
+border-bottom-color: transparent;
+cursor: default;
+}
+
+.nav-tabs>.ui-tabs-active>a, .nav-tabs>.ui-tabs-active>a:hover, .nav-tabs>.ui-tabs-active>a:focus {
+color: #e66a12;
+}
