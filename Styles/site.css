@@ -24,3 +24,19 @@ cursor: default;
 .nav-tabs>.ui-tabs-active>a, .nav-tabs>.ui-tabs-active>a:hover, .nav-tabs>.ui-tabs-active>a:focus {
 color: #e66a12;
 }
+
+.widget-MyCart span.CTitle {
+    color: #e66a12;
+    font-family: "Oswald","Helvetica Neue","Arial","Helvetica",sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    font-size: 17.5px;
+    margin: 10.5px 0;
+    text-rendering: optimizelegibility;
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
