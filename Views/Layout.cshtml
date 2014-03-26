@@ -121,7 +121,7 @@
 	<div class="container">
 		<div class="row-fluid">
             @*Only Show Orders*@
-            @if (Model.Messages != null && Model.Messages.Items != null && ((IEnumerable<dynamic>)Model.Messages.Items).Any(f => f.Content != null && f.Content.Items != null && ((IEnumerable<dynamic>)f.Content.Items).Any(x => x.Order != null)))
+            @if (Model.Messages != null && Model.Messages.Items != null && ((IEnumerable<dynamic>)Model.Messages.Items).Any(f => f.Content != null && f.Content.Items != null && ((IEnumerable<dynamic>)f.Content.Items).Any(x => x.Order != null && x.Order.Products != null && ((IEnumerable<dynamic>)x.Order.Products).Any())))
             {
 			    @:<div class="span3 hidden-phone">
 				   @: <div id="Messages" class="LeftZone">@Display(Model.Messages)<br /><br /></div>
