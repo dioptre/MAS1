@@ -3,6 +3,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Orchard;
 using Orchard.Mvc.Filters;
+using System.Dynamic;
 
 namespace MAS1.Filters {
     public class LayoutFilter : FilterProvider, IResultFilter {
