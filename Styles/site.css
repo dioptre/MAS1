@@ -45,3 +45,7 @@ color: #e66a12;
 	font-weight:bold; 
 	background-color:yellow;
 }
+
+.searchbox {
+    margin:10px;
+}
