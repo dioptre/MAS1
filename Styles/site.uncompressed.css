@@ -1879,7 +1879,7 @@ header.navbar .header-aux>.container .span4 .btn{background:transparent;box-shad
 header.navbar .header-aux>.container .span4 .btn:after{color:white;content:"\f002";font-family:fontawesome;font-size:20px;position:absolute;right:0;text-shadow:0 1px 3px rgba(0,0,0,0.2);top:4px;}
 #HomeSlider{clear:both;}
 #HomeSlider .container-box,#HomeSlider .widget{margin:0!important;}
-#PageTitle{background:url("http://bindtuning.com/General/background/bg.transp.tile-wavecut.png");}
+#PageTitle{background:url(../Content/Images/bg.transp.tile-wavecut.png);}
 #PageTitle h1,#PageTitle h2,#PageTitle h3,#PageTitle h4,#PageTitle h5,#PageTitle h6{margin:0;padding:40px 0;text-align:center;text-shadow:0 1px 0 rgba(255,255,255,0.6);}
 #MainWrapper{position:relative;}
 #MainWrapper>.container>.row-fluid>.span3{background:#f8f7f5;margin:40px 0;padding:20px 0;}
@@ -1887,7 +1887,7 @@ header.navbar .header-aux>.container .span4 .btn:after{color:white;content:"\f00
 #MainWrapper.boxed #Main{background:white;box-shadow:0 0 10px rgba(0,0,0,0.1);margin-top:40px;margin-bottom:40px;}
 #MainWrapper.boxed>.container>.row-fluid>.span3{background:white;box-shadow:0 0 10px rgba(0,0,0,0.1);}
 #Main{padding:20px 30px 40px;}
-footer{background:url("http://bindtuning.com/General/background/bg.transp.tile-wavecut.png") #333;margin:0;padding:70px 0;color:white;color:rgba(255,255,255,0.5);text-shadow:0 1px 0 rgba(0,0,0,0.2);font-size:15px;font-weight:bold;bottom:0;position:absolute;width:100%;}
+footer{background:url(../Content/Images/bg.transp.tile-wavecut.png) #333;margin:0;padding:70px 0;color:white;color:rgba(255,255,255,0.5);text-shadow:0 1px 0 rgba(0,0,0,0.2);font-size:15px;font-weight:bold;bottom:0;position:absolute;width:100%;}
 footer #FooterWidgets h1,footer #FooterWidgets h2,footer #FooterWidgets h3,footer #FooterWidgets h4,footer #FooterWidgets h5,footer #FooterWidgets h6{color:white;color:rgba(255,255,255,0.5);text-shadow:0 1px 0 rgba(0,0,0,0.2);}
 footer #FooterWidgets a{color:white;color:rgba(255,255,255,0.5);text-shadow:0 1px 0 rgba(0,0,0,0.2);}
 footer #FooterWidgets a:hover{text-decoration:underline;}
