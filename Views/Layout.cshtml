@@ -74,18 +74,18 @@
                        {
 		<span class="user-actions">
 			@Html.ActionLink(T("Sign Out").ToString(), "LogOff", new { Controller = "Account", Area = "Orchard.Users", ReturnUrl = Context.Request.RawUrl })
-			@Html.ActionLink("Dashboard", "Index", new { Area = "Dashboard", Controller = "Admin" })
+			@Html.ActionLink("Dashboard", "MyAccount", new { Area = "EXPEDIT.Transactions", Controller = "User" })
 		</span>
                        }
                        else
                        {
 		<span class="user-actions">@Html.ActionLink(T("Sign In").ToString(), "LogOn", new { Controller = "Account", Area = "Orchard.Users", ReturnUrl = Context.Request.RawUrl })</span>
                        }</span>
-						<span id="User">@if (Request.IsAuthenticated)
+						@*<span id="User">@if (Request.IsAuthenticated)
                       {
 	<span class="welcome">@if (WorkContext.CurrentUser != null)
                        {@T("<strong>{0}</strong>", new HtmlString(Html.ActionLink(WorkContext.CurrentUser.UserName, "ChangePassword", new { Controller = "Account", Area = "Orchard.Users" }).ToString()))}</span>
-                      }</span>
+                      }</span>*@
 					</div>
 				</div>
 				<div class="nav-collapse collapse-search collapse">
